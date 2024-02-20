@@ -8,7 +8,7 @@
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *tmp, *n1, *n2;
-	
+
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 	{
 		return;
@@ -51,7 +51,7 @@ void swap_nodes(listint_t *n1, listint_t *n2)
 	listint_t *n1prev;
 
 	n1prev = n1->prev;
-	
+
 	if (n1->prev)
 	{
 		n1->prev->next = n2;
